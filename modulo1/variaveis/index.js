@@ -44,3 +44,11 @@ b = c
 
 console.log("O novo valor de a é " + a); //o novo valor de a é 80
 console.log("O novo valor de b é " + b); //o novo valor de b é 40
+
+/*DESAFIO*/ 
+
+let primeiroNumero = Number(prompt("Escolha um número"));
+let segundoNumero = Number(prompt("Escolha outro número"));
+
+console.log(primeiroNumero + segundoNumero);
+console.log(primeiroNumero * segundoNumero);
