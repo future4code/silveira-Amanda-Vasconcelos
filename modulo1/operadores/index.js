@@ -29,7 +29,6 @@ Para que ele consiga exetucar uma operaçao, ele precisa transformar a string em
 
 */
 
-/*
 //1.
 const idadeUsuario = Number(prompt("Diga sua idade: "));
 const idadeMelhorAmigo = Number(prompt("Diga a idade do seu melhor amigo(a)"));
@@ -69,10 +68,9 @@ console.log("A temperatura em Celsius indicada pelo usuário ao ser convertida e
 const quilowatts = 280;
 console.log("O valor a ser pago é ", (280 * 0.05), " reais.");
 console.log("Com desconto de 15%, o valor a ser pago é de ", (280 * 0.05) * (15/100) ," reais.");
-*/
+
 
 //3.
-//a. 
 console.log("20lb equivalem a ", (20 / 2.2046) , " kg.");
 console.log("10.5oz equivalem a ",  (10 * 0.0283) ," kg.");
 console.log("100mi equivalem a ", (100 / 0.00062137)," m.");
