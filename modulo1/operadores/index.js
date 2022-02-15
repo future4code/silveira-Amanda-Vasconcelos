@@ -29,6 +29,7 @@ Para que ele consiga exetucar uma operaçao, ele precisa transformar a string em
 
 */
 
+/*
 //1.
 const idadeUsuario = Number(prompt("Diga sua idade: "));
 const idadeMelhorAmigo = Number(prompt("Diga a idade do seu melhor amigo(a)"));
@@ -55,4 +56,29 @@ console.log("O primeiro numero é divisível pelo segundo?", ((primeiroNumero % 
 console.log("O segundo numero é divisível pelo primeiro?", ((segundoNumero % primeiroNumero) === 0));
 
 //Desafio:
+//1.
+console.log("77 Fahrenheit em Kelvin é ", (77 - 32) * (5/9) + 273.15 , " K.");
+console.log("80 Celsius em Fahrenheit é ", (80 * (9/5) + 32) , " F.");
+console.log("30 Celsius em Fahrenheit é ", (30 * (9/5) + 32) , " F.");
+console.log("30 Celsius em Kelvin é ", (30 + 273) , " K.");
 
+const temperaturaCelsius = +prompt("Diga uma temperatura em Celsius para ser transformada em Kelvin");
+console.log("A temperatura em Celsius indicada pelo usuário ao ser convertida em Kelvin é ", temperaturaCelsius + 273, " K.");
+
+//2.
+const quilowatts = 280;
+console.log("O valor a ser pago é ", (280 * 0.05), " reais.");
+console.log("Com desconto de 15%, o valor a ser pago é de ", (280 * 0.05) * (15/100) ," reais.");
+*/
+
+//3.
+//a. 
+console.log("20lb equivalem a ", (20 / 2.2046) , " kg.");
+console.log("10.5oz equivalem a ",  (10 * 0.0283) ," kg.");
+console.log("100mi equivalem a ", (100 / 0.00062137)," m.");
+console.log("50ft equivalem a ", (50 * 0.3048), " m.");
+console.log("103.56gal equivalem a ",((103.56 * 473176473)/125000000)," l.");
+console.log("450 xic equivalem a ", (450 * 6)/25 ," l.");
+
+const conversaoUsuario = +prompt("Qual distancia em pés voce quer converter para metros?");
+console.log("A distancia em metros é ", (conversaoUsuario * 0.3048),".");
