@@ -12,7 +12,7 @@ resultado = bool1 && bool2 && bool3
 console.log("O resultado da condicao é . ", false) 
 
 resultado = !resultado && (bool1 || bool2) 
-console.log("O resultado da condicao é  ", false)
+console.log("O resultado da condicao é  ", true)
 
 console.log("O resultado da condicao é . ", typeof boolean)
 
@@ -67,7 +67,7 @@ console.log("A temperatura em Celsius indicada pelo usuário ao ser convertida e
 //2.
 const quilowatts = 280;
 console.log("O valor a ser pago é ", (280 * 0.05), " reais.");
-console.log("Com desconto de 15%, o valor a ser pago é de ", (280 * 0.05) * (15/100) ," reais.");
+console.log("Com desconto de 15%, o valor a ser pago é de ", (280 * 0.05) * (85/100) ," reais.");
 
 
 //3.
