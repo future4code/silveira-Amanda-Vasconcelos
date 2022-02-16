@@ -19,7 +19,7 @@ Resposta: 3
 
 array[i+1] = 19 // nao entendi
 console.log('e. ', array)
-Resposta: 19
+Resposta: 3, 19, 5, 6, 7, 8, 9, 10, 11, 12, 13
 
 const valor = array[i+6]
 console.log('f. ', valor)
@@ -35,6 +35,7 @@ Resposta:
            No console será exibida a seguinte frase: SUBI NUM ONIBUS EM MIRROCOS 27
                 
 */
+
 
 //QUESTAO 1.  NOME E EMAIL
 const nomeUsuario = prompt("Qual é o seu nome?");
@@ -70,11 +71,24 @@ listaDeTarefas.push(tarefasTresUsuario);
 
 console.log(listaDeTarefas);
 
-const removerTarefa = Number(prompt("Escolha um numero entre 0 e 2 para remover uma tarefa"));
-const removendoTarefa = listaDeTarefas.splice(removerTarefa, 1);
+const removerTarefa = Number(prompt("Escolha uma tarefa realizada para remover da lista"));
+const removendoTarefa = listaDeTarefas.splice(removerTarefa - 1, 1); // -1 é utilizado pq o índice começa com 0
 //const removendoTarefa = listaDeTarefas.splice(removerTarefa);
 //ATENÇAO: .splice(i) retorna apenas o elemento excluido; E splice(i,n) mantem a lista sem o elemento do índice i. A lista pode ser acessada chamando o nome do array. 
 
 console.log(removendoTarefa);
 console.log(listaDeTarefas);
 
+
+//DESAFIO
+//PRIMEIRA QUESTAO
+const fraseUsuario = prompt("Escreva uma frase:");
+const fraseEmString = fraseUsuario.split(" ");
+
+console.log(fraseEmString);
+
+//SEGUNDA QUESTAO
+const listaFrutas = ["Banana", "Morango", "Abacaxi", "Laranja", "Ameixa"];
+const procurandoAbacaxi = listaFrutas.indexOf("Abacaxi");
+
+console.log(procurandoAbacaxi +", " + listaFrutas.length);
