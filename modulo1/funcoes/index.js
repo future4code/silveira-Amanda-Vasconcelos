@@ -8,7 +8,7 @@ console.log(minhaFuncao(2))
 console.log(minhaFuncao(10))
 
 A. Resposta: 10 e 50
-B. Resposta: Se o console.log fosse retirado, nada seria impresso no console. 
+B. Resposta: Se o console.log fosse retirado, nada seria impresso no console pois foi ele quem chamou a funçao. 
 
 SEGUNDA QUESTAO: 
 let textoDoUsuario = prompt("Insira um texto");
@@ -32,7 +32,6 @@ Além disso, ao retirar o .includes, a srting é impressa no console.
 */
 
 //PRIMEIRA QUESTAO
-
 
 function informacaoPessoalFixa() {
     console.log(`Eu sou Amanda, tenho 33 anos, moro em Icapuí e sou estudante.`);
@@ -90,29 +89,24 @@ function alterandoMensagem(mensagem){
     console.log(mensagemMaiuscula, tamanhoDaMensagem);
 }
 
-const mensagemAlterada = alterandoMensagem(`Eu sou a onda, faz de mim o mar.`);
+alterandoMensagem(`Eu sou a onda, faz de mim o mar.`);
 
-console.log(mensagemAlterada); //por que ele tá dando undefined nessa linha?
 
 //TERCEIRA QUESTAO
 function somando(x,y){
-    const soma = x + y;
-    return soma;
+    return x + y;
 }
 
 function subtraindo(x,y){
-    const subtracao = x - y;
-    return subtracao;
+   return x - y;
 }
 
 function multiplicando(x,y){
-    const multiplicacao = x * y;
-    return multiplicacao;
+    return x * y;
 }
 
 function dividindo(x,y){
-    const divisao = x / y;
-    return divisao;
+   return x / y;
 }
 
 const primeiroNumero = Number(prompt(`Escolha um número:`));
@@ -129,3 +123,27 @@ console.log(`Subtraçao: ${subtracaoDoUsuario}`);
 console.log(`Multiplicaçao: ${multiplicacaoDoUsuario}`);
 console.log(`Divisao: ${divisaoDoUsuario}`);
 
+//DESAFIO
+//1. 
+//A. 
+const mostraNoConsole = (parametro) => {
+    console.log(parametro);
+}
+
+//B. 
+const somaNumeros = (x , y) => {
+  const soma = x + y 
+  mostraNoConsole(soma);
+}
+
+somaNumeros(2,4);
+
+
+//2.
+function teoremaPitagoras(a, b) {
+    const hip = Math.sqrt((a*a) + (b*b));
+    return hip
+}
+
+const resultadoHip = teoremaPitagoras(7, 9);
+console.log(resultadoHip);
