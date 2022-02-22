@@ -36,7 +36,7 @@
 
 // a. para informar os preço de algumas frutas ao usuário de acordo com a fruta que ele digitar no campo do prompt. 
 // b. O preço da Maça é R$ 2.25
-// c. O preço da fruta  Pêra  é  R$  5.5. Acredito que ele faz isso porque o break para a execuçao do código a partir dali. Mas a condiçao foi testada antes de chegar a esse break. 
+// c. O preço da fruta  Pêra  é  R$  5. Como nao tinha o break de parada, o código continuou executando as outras verificaçoes e foi até o Default. 
 
 //TERCEIRA QUESTAO
 //const numero = Number(prompt("Digite o primeiro número."))
@@ -94,14 +94,18 @@ switch(horarioEstudoUsuario) {
 // //Questao 4. 
 const generoFilme = prompt("Qual é o gerero do filme? Terror ou fantasia?");
 const valorFilme = prompt("Qual é o preço do ingresso?");
+const snack = prompt("Qual snack voce vai comprar?");
 
-function verificaAceitaConvite(genero, valor) {
+function verificaAceitaConvite(genero, valor, snack) {
     if (genero === "fantasia" && valor < 15){
-        console.log("Bom filme!")
+        
+        console.log(`Bom filme!`);
+        console.log(`Aproveite o seu ${snack}`);
+        
     } else {
         console.log("Escolha outro filme!")
     }
 }
 
-verificaAceitaConvite(generoFilme, valorFilme);
+verificaAceitaConvite(generoFilme, valorFilme, snack);
 
