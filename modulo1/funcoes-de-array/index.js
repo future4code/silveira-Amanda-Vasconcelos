@@ -46,7 +46,7 @@ const usuarios = [
 
 //PRIMEIRA QUESTAO
 
-
+/*
 const pets = [
 	{ nome: "Lupin", raca: "Salsicha"},
 	{ nome: "Polly", raca: "Lhasa Apso"},
@@ -122,3 +122,28 @@ const mensagemYpe = ype.map((item, index, array) => {
 	console.log(`Compre ${item.nome} por ${item.preco}`)
 })
 mensagemYpe;
+*/
+
+const pokemons = [
+    { nome: "Bulbasaur", tipo: "grama" },
+    { nome: "Bellsprout", tipo: "grama" },
+    { nome: "Charmander", tipo: "fogo" },
+    { nome: "Vulpix", tipo: "fogo" },
+    { nome: "Squirtle", tipo: "água" },
+    { nome: "Psyduck", tipo: "água" },
+ ]
+
+ //a) Crie um novo array que contenha apenas o nome dos pokémons em ordem alfabética
+
+ const pokemonsOrdemAlfabetica = pokemons.map((item, index, array) => {
+    return item.nome
+ })
+ console.log(pokemonsOrdemAlfabetica.sort());
+
+ //b) Crie um novo array apenas com os tipos dos pokémons, sem repetição
+ //const numerosSemRepeticao = [...new Set(numeros)];
+
+ //const tipoSemRepeticao = [...new Set(pokemons)]
+
+
+ 
