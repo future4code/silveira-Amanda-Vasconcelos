@@ -19,7 +19,8 @@
        // for (i = 0; i < 2; i++) {
        //    usuario.push(comprarCarta())
        //    computador.push(comprarCarta())
-       // }
+       // } 
+       //Como utilizar uma lógica parecida? 
     
        const usuario = [comprarCarta(), comprarCarta()]
        const computador = [comprarCarta(), comprarCarta()]
