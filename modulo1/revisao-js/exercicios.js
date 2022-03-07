@@ -10,21 +10,30 @@ function retornaTamanhoArray(array) {
 
 // EXERCÍCIO 02
 function retornaArrayInvertido(array) {
-  //return array.reverse()
-  let ultimoElemento = array[array.length - 1]
-  array[array.length - 1] = array[0]
-  array[0] = ultimoElemento
-  return array
+  return array.reverse()
+//   let ultimoElemento = array[array.length - 1]
+//   array[array.length - 1] = array[0]
+//   array[0] = ultimoElemento
+//   return array
 }
 
 // EXERCÍCIO 03
 function retornaArrayOrdenado(array) {
-  
+    array.sort((a,b) => {
+        if(a > b) return 1;
+        if(a < b) return -1;
+        return 0;
+    })
+    return array
 }
 
 // EXERCÍCIO 04
 function retornaNumerosPares(array) {
-  
+  const arrayPar = array.filter((item, index, array) => {
+    return item % 2 == 0
+  })
+  return arrayPar
+    //fazer commit
 }
 
 // EXERCÍCIO 05
