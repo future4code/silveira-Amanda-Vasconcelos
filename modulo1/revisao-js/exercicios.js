@@ -47,17 +47,17 @@ function retornaNumerosParesElevadosADois(array) {
     // const arrayQuadrado = arrayPar.map((item) => {
     //     return Math.pow(item, 2)
     // })
-    
-    return arrayQuadrado;
-      
-      
-
-
+    //return arrayQuadrado;
 }
 
 // EXERCÍCIO 06
 function retornaMaiorNumero(array) {
-  
+    return Math.max.apply(null, array);
+
+//   const maiorNumeroArray = array.filter((item) => {
+//     return Math.max(item)
+//   })
+//   return maiorNumeroArray;
 }
 
 // EXERCÍCIO 07
