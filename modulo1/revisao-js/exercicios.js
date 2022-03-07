@@ -32,13 +32,27 @@ function retornaNumerosPares(array) {
   const arrayPar = array.filter((item, index, array) => {
     return item % 2 == 0
   })
-  return arrayPar
-    //fazer commit
+  return arrayPar;
 }
 
 // EXERCÍCIO 05
 function retornaNumerosParesElevadosADois(array) {
- 
+    const arrayParQuadrado = array.filter((item, index, array) => {
+        return item % 2 == 0
+      }).map((item) =>{
+        return Math.pow(item, 2)
+       })
+     return arrayParQuadrado;
+    
+    // const arrayQuadrado = arrayPar.map((item) => {
+    //     return Math.pow(item, 2)
+    // })
+    
+    return arrayQuadrado;
+      
+      
+
+
 }
 
 // EXERCÍCIO 06
