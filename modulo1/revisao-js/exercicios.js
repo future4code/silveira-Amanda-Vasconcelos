@@ -61,13 +61,38 @@ function retornaMaiorNumero(array) {
 }
 
 // EXERCÍCIO 07
-function retornaObjetoEntreDoisNumeros(num1, num2) {
+// function retornaObjetoEntreDoisNumeros(num1, num2) {
+//     function maiorNumero(num1,num2) {
+//         if (num1 > num2) {
+//             return num1
+//         } else {
+//             return num2
+//         }
+//     }
+    
+   
 
-}
+//     // })
+
+
+
+    
+//     // let diferenca = 0
+
+//     return `"maiorNumero":${maiorNumero},"maiorDivisivelPorMenor":${},"diferenca":${}`
+//}
 
 // EXERCÍCIO 08
 function retornaNPrimeirosPares(n) {
-   
+   array = []
+   // contator é n. Quem diz quantas vezes vou ter que repetir a operaçao de multiplicaçao e push pra dentro do array. 
+   for (i = 0; i < n; i++){
+       let numero = (2 * i);
+       array.push(numero)
+   }
+
+   return array;
+
 }
 
 // EXERCÍCIO 09
