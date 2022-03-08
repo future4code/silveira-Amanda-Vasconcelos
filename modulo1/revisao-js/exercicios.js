@@ -61,26 +61,27 @@ function retornaMaiorNumero(array) {
 }
 
 // EXERCÍCIO 07
-// function retornaObjetoEntreDoisNumeros(num1, num2) {
-//     function maiorNumero(num1,num2) {
-//         if (num1 > num2) {
-//             return num1
-//         } else {
-//             return num2
-//         }
-//     }
+function retornaObjetoEntreDoisNumeros(num1, num2) {
     
-   
+    function descobreMaiorNumero(num1, num2) {
+    if (num1 > num2) {
+        let maiorNumero = num1
+        let menorNumero = num2
+        
+    } else {
+        let maiorNumero = num2
+        let menorNumero = num1
+        
+    }
+    return maiorNumero, menorNumero;
+}
 
-//     // })
+    let maiorDivisivelPorMenor = (maiorNumero%menorNumero === 0);
+    let diferenca = maiorNumero - menorNumero;
 
+    return `"maiorNumero":${maiorNumero},"maiorDivisivelPorMenor":${maiorDivisivelPorMenor},"diferenca":${diferenca}`
 
-
-    
-//     // let diferenca = 0
-
-//     return `"maiorNumero":${maiorNumero},"maiorDivisivelPorMenor":${},"diferenca":${}`
-//}
+}
 
 // EXERCÍCIO 08
 function retornaNPrimeirosPares(n) {
@@ -90,26 +91,32 @@ function retornaNPrimeirosPares(n) {
        let numero = (2 * i);
        array.push(numero)
    }
-
    return array;
-
 }
 
 // EXERCÍCIO 09
 function classificaTriangulo(ladoA, ladoB, ladoC) {
-
+    if (ladoA === ladoB && ladoA === ladoC) {
+        return `Equilátero`
+    } else if (ladoA === ladoB && ladoB !== ladoC || ladoA === ladoC && ladoC !== ladoB || ladoB === ladoC && ladoA !== ladoC) {
+        return `Isósceles`
+    } else {
+        return `Escaleno`
+    }
 }
 
 // EXERCÍCIO 10
 function retornaSegundoMaiorESegundoMenor(array) {
-  
+  const novoArray = []
+  const maiorNumero = array.filter((item)=> {
+
+  })
 }
 
 // EXERCÍCIO 11
 function retornaChamadaDeFilme(filme) {
-   
+   return `Venha assistir ao filme ${filme.nome}, de ${filme.ano}, dirigido por ${filme.diretor} e estrelado por ${filme.atores[0]}, ${filme.atores[1]}, ${filme.atores[2]}, ${filme.atores[3]}.`
 }
-
 // EXERCÍCIO 12
 function retornaPessoaAnonimizada(pessoa) {
    
