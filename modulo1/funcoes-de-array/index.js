@@ -47,6 +47,8 @@ const usuarios = [
 //PRIMEIRA QUESTAO
 
 
+/*
+
 const pets = [
 	{ nome: "Lupin", raca: "Salsicha"},
 	{ nome: "Polly", raca: "Lhasa Apso"},
@@ -122,6 +124,9 @@ const mensagemYpe = ype.map((item, index, array) => {
 	console.log(`Compre ${item.nome} por ${item.preco}`)
 })
 mensagemYpe;
+
+*/
+
 
 const pokemons = [
     { nome: "Bulbasaur", tipo: "grama" },
