@@ -1,0 +1,71 @@
+/* Estilizaçao Cabeçalho */
+
+header {
+    background-color: mediumvioletred;
+    color: black;
+    height: 30px;
+    
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px 0 10px;
+}
+
+#icone-inicial {
+    max-height: 15px;
+    max-width: 15px;
+    padding-right: 15px;
+   
+}
+
+#titulo-inicial{
+    font-size: 15px;
+}
+
+.confeitaria-barra-superior {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+/* Estilizaçao Main */
+main {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.barra-navegacao {
+    background-color: #f2d0e0;
+    display: flex;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li > img {
+    max-width: 15px;
+    max-height: 15px;
+    padding-right: 10px;
+}
+
+/* Estilizaçao Footer */
+footer {
+    background-color: mediumvioletred;
+    color: black;
+    height: 30px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+
