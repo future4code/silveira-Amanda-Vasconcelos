@@ -10,7 +10,7 @@ h1 {
 
 }
 
-header {
+main {
     background-color: rgba(85, 184, 176, 0.623);
     text-align: center;
     font-size: large;
@@ -18,19 +18,73 @@ header {
     
 }
 
-.conteiner {
-    border: 10px, coral;
+.indroducao {
+    max-width: 200px;
+    max-height: 100px;
+    text-align: center;
 }
 
 .descricao {
     padding-top: 50px;
     display: block;
     color: rgb(59, 31, 8);
+    line-height: 35px;
 }
 
-.fotoAmanda {
-    max-width: 100px;
-    max-height: 50px;
+.fotoAmanda > img {
+    max-width: 150px;
+    max-height: 150px;
     width: auto;
     height: auto;
+    display: inline-block;
+    border-radius: 50%;
 }
+
+.horizontal {
+    background: rgb(165, 107, 41);
+    display: inline-block;
+    padding: 33px 28px;
+}
+
+.horizontal > ul {
+    /* font-size: 0; */
+    float: right;
+    height: 77px;
+    display: inline-block;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 18px;
+    padding-left: 18px;
+    text-transform: uppercase;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Estilizando links da barra */
+
+.horizontal:link a {
+    color: brown;
+    text-decoration: none;
+}
+
+.horizontal:visited a {
+    color: brown;
+}
+.horizontal:hover  a {
+    color: black;
+    text-decoration: underline;
+}
+
+.horizontal:active a {
+    color: rgb(0, 204, 255);
+}
+
+.horizontal > img {
+    max-height: 44px;
+    max-width: 44px;
+    width: auto;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+/* Estilizar links dos projetos */
