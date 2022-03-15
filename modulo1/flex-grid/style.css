@@ -43,17 +43,28 @@ main {
 .barra-navegacao {
     background-color: #f2d0e0;
     display: flex;
+    
 }
 
-main > div > ul {
+/* main > div > ul {
     display: flex;
     flex-direction: column;
     /* justify-content: space-around;
-    align-items: flex-start; */
+    align-items: flex-start; 
+} */
+
+main > div > ul > li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
 }
 
 ul {
     list-style-type: none;
+    padding-left: 0%;
+    padding-right: 0%;
 }
 
 li > img {
