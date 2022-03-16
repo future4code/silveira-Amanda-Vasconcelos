@@ -28,7 +28,7 @@ body {
 
 /* Estilizando a Main */
 
-main {
+.grid-container {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -64,3 +64,16 @@ footer{
     padding-left: 30px;
 }
 
+/* Responsividade */
+
+@media screen and (max-device-width: 480px) {
+
+.grid-container {
+    display: flex;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+    
+}
