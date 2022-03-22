@@ -1,7 +1,13 @@
 import React from 'react';
 import './App.css';
 import CardGrande from './components/CardGrande/CardGrande';
+import CardPequeno from './components/CardPequeno/CardPequeno';
 import ImagemButton from './components/ImagemButton/ImagemButton';
+import fotoAmanda from './img/fotoAmanda.jpg';
+import imgEmail from './img/imgEmail.jpeg';
+import imgEndereco from './img/imgEndereco.png';
+import tango from './img/tango.jpeg';
+
 
 function App() {
   return (
@@ -9,9 +15,9 @@ function App() {
       <div className="page-section-container">
         <h2>Dados pessoais</h2>
         <CardGrande 
-          imagem="https://uploads-ssl.webflow.com/5d640f4558306be99cf47a0e/5dd57846babb597b77c6bb1d_PerfilFuture4_cor.png" 
+          imagem={fotoAmanda}
           nome="AMANDA MARIA" 
-          descricao="Oi, eu sou a Amanda. Sou estudante da Labenu e já trabalhei como bióloga. Adoro dançar, brincar com minha cachorra, fazer atividades ao ar livre e trabalhar meu autoconhecimento."
+          descricao="Oi, eu sou a Amanda. Sou estudante da Labenu e já trabalhei como bióloga. Adoro dançar, brincar com minha cachorra, fazer atividades ao ar livre e trabalhar meu autoconhecimento. Estou estudando para migrar de carreira e trabalhar com tecnologia."
         />
         
         <ImagemButton 
@@ -19,19 +25,39 @@ function App() {
           texto="Ver mais"
         />
       </div>
+      
+      <div className="page-section-container">
+        <CardPequeno
+          imagem={imgEmail}
+          nome="Email:"
+          descricao="amanda@cmail.com"
+        />
+        <CardPequeno
+          imagem={imgEndereco}
+          nome="Endereço:"
+          descricao="Rua do Sol, 04"
+        />
+
+      </div>
 
       <div className="page-section-container">
         <h2>Experiências profissionais</h2>
         <CardGrande 
           imagem="https://s3.amazonaws.com/future4.com.br/static/headf4-c492117ca2373dc85ca81bf715b3dc2a.png" 
           nome="Labenu" 
-          descricao="Formando desenvolvedores para o mercado de trabalho!" 
+          descricao="Conceitos básicos sobre HTML, JS, CSS" 
         />
         
         <CardGrande 
-          imagem="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/2449px-NASA_logo.svg.png" 
-          nome="NASA" 
-          descricao="Apontando defeitos." 
+          imagem="https://www.ase.org.uk/sites/default/files/styles/manual_crop/public/shutterstock_465920834.jpg?itok=5lsuoG3A" 
+          nome="Biologia" 
+          descricao="Trabalhei durante 10 com mamíferos marinhos e adquiri experiencia com mergulho, fotografia, trabalhos científicos. Além disso, atuei como coordenadora do programa de voluntariado" 
+        />
+
+        <CardGrande 
+          imagem={tango} 
+          nome="Dança" 
+          descricao="De aluna a professora de Tango - boa comunicaçao, socializaçao e experiencia com plajenamentos." 
         />
       </div>
 
