@@ -7,6 +7,7 @@ import fotoAmanda from './img/fotoAmanda.jpg';
 import imgEmail from './img/imgEmail.jpeg';
 import imgEndereco from './img/imgEndereco.png';
 import tango from './img/tango.jpeg';
+import styled from 'styled-components'
 
 
 function App() {

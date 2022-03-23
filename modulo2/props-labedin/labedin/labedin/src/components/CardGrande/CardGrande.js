@@ -1,8 +1,11 @@
 import React from 'react';
+import styled from 'styled-components';
 import './CardGrande.css'
+
 
 function CardGrande(props) {
     return (
+        
         <div className="bigcard-container">
             <img src={ props.imagem } />
             <div>
