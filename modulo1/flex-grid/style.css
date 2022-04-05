@@ -1,0 +1,120 @@
+/* Estilizaçao Cabeçalho */
+
+header {
+    background-color: mediumvioletred;
+    color: black;
+    height: 30px;
+    
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px 0 10px;
+}
+
+#icone-inicial {
+    max-height: 15px;
+    max-width: 15px;
+    padding-right: 15px;
+   
+}
+
+#titulo-inicial{
+    font-size: 15px;
+}
+
+.confeitaria-barra-superior {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+/* Estilizaçao Main */
+main {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.barra-navegacao {
+    background-color: #f2d0e0;
+    display: flex;
+    
+}
+
+/* main > div > ul {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around;
+    align-items: flex-start; 
+} */
+
+main > div > ul > li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+
+li > img {
+    max-width: 15px;
+    max-height: 15px;
+    padding-right: 10px;
+}
+
+li > a {
+    text-decoration: none !important;
+    color: black;
+}
+
+.galeria-fotos {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.galeria-fotos > div > h1{
+    text-align: center;
+    font-size: 20px;
+}
+
+.galeria-fotos > div > p {
+    text-align: center;
+    font-size: 15px;
+    
+}
+
+.galeria-fotos > div > img {
+    max-height: 300px;
+    max-width: 150px;
+    padding: 20px;
+}
+
+
+/* Estilizaçao Footer */
+footer {
+    background-color: mediumvioletred;
+    color: black;
+    height: 30px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+
